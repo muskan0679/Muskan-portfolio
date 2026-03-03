@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muskan Verma Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    overflow-x:hidden;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    color:#b76eff;
+    margin-bottom:20px;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.blob{
+    position:absolute;
+    width:650px;
+    height:500px;
+    background:#1e1e1e;
+    border-radius:60% 40% 50% 70% / 60% 30% 70% 40%;
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text h1{
+    font-size:45px;
+    color:#b76eff;
+}
+
+.hero-text p{
+    margin-top:10px;
+    font-size:18px;
+    color:#ccc;
+}
+
+.hero-text span{
+    color:#b76eff;
+}
+
+.hero-img img{
+    width:300px;
+    border-radius:20px;
+    filter:grayscale(100%);
+    transition:0.4s;
+}
+
+.hero-img img:hover{
+    filter:grayscale(0%);
+    transform:scale(1.05);
+}
+
+/* SKILLS */
+
+.skills ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skills li{
+    list-style:none;
+    padding:8px 15px;
+    background:#1e1e1e;
+    border:1px solid #b76eff;
+    border-radius:20px;
+}
+
+/* PROJECTS */
+
+.project{
+    background:#1e1e1e;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #b76eff55;
+}
+
+/* CONTACT */
+
+.contact p{
+    margin:8px 0;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#777;
+}
+
+@media(max-width:900px){
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .blob{
+        width:90%;
+        height:400px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="blob"></div>
+    <div class="hero-content">
+        
+        <div class="hero-text">
+            <h1>Muskan Verma</h1>
+            <p>Python / C++ Learner</p>
+            <p>AI-ML Student | Can use AI tools effectively</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="muskan.jpg" alt="Muskan Photo">
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am an AIML student at Indore Institute of Science and Technology (2024-2028).
+        I am currently learning Python, C++, DSA and Web Development.
+        I can use AI tools effectively and build creative tech solutions.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>DSA</li>
+        <li>Canva</li>
+        <li>Gamma AI</li>
+        <li>GitHub</li>
+        <li>Dev C++</li>
+        <li>Google Colab</li>
+        <li>PyCharm</li>
+        <li>Jupyter Notebook</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Nearby Food Stall Finder for College Students</h3>
+        <p>
+            A map-based web application that helps college students find nearby food stalls.
+            Integrated location features and categorized stalls for easy access.
+            Designed to solve daily student food discovery problems.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Netflix Clone</h3>
+        <p>
+            A responsive Netflix homepage clone built using HTML, CSS and JavaScript.
+            Includes banner section, movie rows and hover effects.
+            Designed with modern UI and mobile responsiveness.
+        </p>
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section>
+    <h2>Education</h2>
+    <p><strong>Indore Institute of Science and Technology</strong></p>
+    <p>AIML (2024-2028)</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: 75muskann@gmail.com</p>
+    <p>Phone: 7974796400</p>
+</section>
+
+<footer>
+    © 2026 Muskan Verma | All Rights Reserved
+</footer>
+
+</body>
+</html>
